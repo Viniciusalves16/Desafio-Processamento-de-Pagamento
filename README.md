@@ -1,5 +1,5 @@
 # Desafio-Processamento-de-Pagamento
-Link da API DE Validaçäo: https://github.com/Viniciusalves16/PrePaymentAPI ✅
+Link da API de Validaçäo: https://github.com/Viniciusalves16/PrePaymentAPI ✅
 
 
 Requisitos Funcionais:
