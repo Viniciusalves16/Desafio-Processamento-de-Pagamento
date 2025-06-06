@@ -23,15 +23,6 @@ Notificação de Pagamento:
 Uma vez que o pagamento seja processado, a API deve notificar o cliente e outros sistemas sobre o status do pagamento via Kafka.
 A notificação pode ser por email, SMS, ou webhook.
 
-
-
-
-Relatórios de Pagamento:
-Os relatórios de pagamento devem ser gerados de forma rápida, possivelmente utilizando cache para melhorar o desempenho.
-O histórico de pagamentos deve ser acessível via endpoints da API.
-
-
-
 Cache:
 Informações de pagamento, como detalhes de transações já processadas, devem ser armazenadas em cache (utilizando Redis, por exemplo) para acelerar a consulta.
 Configurações como taxas de pagamento ou limites de pagamento podem ser cacheadas para reduzir a carga no banco de dados.
@@ -46,7 +37,6 @@ O uso de threads pode ser aplicado nas notificações, relatórios ou no process
 
 Persistência de Dados:
 Os dados de pagamento devem ser armazenados em banco de dados relacional (MySQL, PostgreSQL, etc.).
-O modelo de dados de pagamento inclui campos como ID do pagamento, status, método de pagamento, valor, data de criação, etc.
 
 
 
@@ -113,13 +103,7 @@ Outro sistema escuta o tópico do Kafka e envia uma notificação ao cliente sob
 
 
 
-Cache:
-O status do pagamento é armazenado em cache para evitar consultas repetidas ao banco de dados, acelerando a recuperação de informações de pagamentos recentes.
-Informações de configuração de pagamento (ex: taxas de processamento) podem ser cacheadas.
 
 
 
-Geração de Relatórios:
-Relatórios de pagamento podem ser gerados de forma assíncrona, armazenando as informações em cache para acesso rápido.
-Curso para Ajudar no Desenvolvimento do Projeto:
 
