@@ -23,11 +23,6 @@ Notificação de Pagamento:
 Uma vez que o pagamento seja processado, a API deve notificar o cliente e outros sistemas sobre o status do pagamento via Kafka.
 A notificação pode ser por email, SMS, ou webhook.
 
-Cache:
-Informações de pagamento, como detalhes de transações já processadas, devem ser armazenadas em cache (utilizando Redis, por exemplo) para acelerar a consulta.
-Configurações como taxas de pagamento ou limites de pagamento podem ser cacheadas para reduzir a carga no banco de dados.
-
-
 
 Controle de Threads:
 Algumas operações, como o processamento de grandes volumes de dados (ex: atualização de status de pagamento para múltiplos clientes ou geração de relatórios), devem ser feitas em threads separadas para não bloquear a execução da API.
@@ -62,13 +57,6 @@ Usar Spring Data JPA para persistência de dados no banco relacional.
 Kafka:
 Usar o Spring Kafka para integração com Kafka, garantindo uma comunicação assíncrona e escalável.
 O Kafka deve ser usado para enviar eventos de pagamento para outros sistemas ou serviços (ex: sistemas de notificação ou relatórios).
-
-
-
-Cache (Redis):
-Utilizar Spring Cache com Redis como provedor de cache para armazenar transações de pagamento recentes ou configurações de pagamento que não mudam frequentemente.
-Usar anotações como @Cacheable e @CachePut do Spring para gerenciar o cache de maneira declarativa.
-
 
 
 Threads (Execução Assíncrona):
