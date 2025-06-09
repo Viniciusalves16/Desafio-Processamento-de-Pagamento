@@ -6,26 +6,18 @@ Link da API de Pagamento: https://github.com/Viniciusalves16/PagFlow ✅
 Link da API de Enivo Notificaçao: https://github.com/Viniciusalves16/NotificationDispatcher ✅
 
 
-![desenho desafio](https://github.com/user-attachments/assets/6c906037-d48b-4854-a541-6869befe98a4)       Requisitos Funcionais:
+![desenho desafio](https://github.com/user-attachments/assets/6c906037-d48b-4854-a541-6869befe98a4)      
 
-
-
-                                                                                                                  Cadastro de Pagamento:
-                                                                                                                        O cliente pode realizar um pagamento utilizando diferentes métodos (cartão de crédito, boleto bancário, transferência, etc.).
-                                                                                                                        A API deve validar a entrada de dados do pagamento, como o valor, o método de pagamento e as informações do cliente.
-
-
-
-
-
-
-
+Requisitos Funcionais:
 
 Cadastro de Pagamento:
 O cliente pode realizar um pagamento utilizando diferentes métodos (cartão de crédito, boleto bancário, transferência, etc.).
 A API deve validar a entrada de dados do pagamento, como o valor, o método de pagamento e as informações do cliente.
 
 
+Cadastro de Pagamento:
+O cliente pode realizar um pagamento utilizando diferentes métodos (cartão de crédito, boleto bancário, transferência, etc.).
+A API deve validar a entrada de dados do pagamento, como o valor, o método de pagamento e as informações do cliente.
 
 
 Processamento Assíncrono de Pagamento:
